@@ -1,3 +1,195 @@
 html {
-  
+
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  width: 100%;
+}
+header .logo {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  margin-left: 24px;
+}
+header .logo span {
+  text-transform: uppercase;
+}
+header .logo span.emph {
+  font-weight: bold;
+}
+header .nav {
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+}
+header .nav span {
+  margin-left: 16px;
+}
+
+
+main {
+
+}
+.banner {
+  display: flex;
+  justify-content: flex-start;
+  background-color: lightgrey;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.banner .salescopy {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: flex-start;
+  align-content: center;
+  width: 30%;
+}
+.banner .salescopy h3 {
+  font-weight: normal;
+}
+.banner .salescopy .start-here {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: white;
+  background-color: grey;
+  padding: 8px 0px;
+}
+
+
+
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.content-title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 32px 0px;
+}
+.column-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  width: 60%;
+  padding: 32px 24px;
+}
+.column-main .h2 {
+  margin: 32px 0px 24px 0px;
+}
+.column-main img {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+.column-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  width: 40%;
+
+  margin: 32px 0px;
+}
+.rectangle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border: 1px solid grey;
+}
+.rectangle img {
+  width: 35%;
+  height: auto;
+  overflow: auto;
+  margin: 16px 16px;
+}
+.rectangle .description {
+  display: flex;
+  flex-direction: column;
+  width: 65%;
+  height: auto;
+}
+
+.content.courses {
+  justify-content: center;
+  background-color: lightgrey;
+}
+.courses h2 {
+  margin-top: 32px;
+}
+
+.grid {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 56px;
+}
+.grid .box {
+  align-items: flex-start;
+  width: 28%;
+  margin: 32px 16px;
+  color: grey;
+  background-color: white;
+}
+.grid .box img {
+  width: 100%;
+  height: auto;
+}
+.grid .box .text-box {
+  height: 150px;
+  margin: 16px 16px 24px 16px;
+}
+.grid .box h3 {
+  color: black;
+  margin-top: 16px;
+}
+.grid .box span {
+  margin: 8px 0px;
+}
+.grid .box p {
+  font-size: 0.8em;
+}
+
+.exhibit {
+  display: flex;
+  justify-content: center;
+}
+.container.exhibit {
+  display: flex;
+  flex-direction: row;
+}
+.exhibit video {
+  width: 100%;
+}
+.exhibit p {
+  font-size: 0.8em;
+}
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 0.8em;
+}
+footer .copyright {
+  margin: 16px 24px;
 }
