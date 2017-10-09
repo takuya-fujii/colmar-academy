@@ -14,7 +14,7 @@ header .logo {
   display: flex;
   align-items: center;
   height: 32px;
-  margin-left: 24px;
+  margin: 0px 24px;
 }
 header .logo span {
   text-transform: uppercase;
@@ -29,6 +29,9 @@ header .nav {
 }
 header .nav span {
   margin-left: 16px;
+}
+header .nav-icons {
+  display: none;
 }
 
 
@@ -87,7 +90,7 @@ main {
   width: 60%;
   padding: 32px 24px;
 }
-.column-main .h2 {
+.column-main h2 {
   margin: 32px 0px 24px 0px;
 }
 .column-main img {
@@ -116,7 +119,7 @@ main {
 .rectangle img {
   width: 35%;
   height: auto;
-  overflow: auto;
+  overflow: hidden;
   margin: 16px 16px;
 }
 .rectangle .description {
@@ -124,6 +127,10 @@ main {
   flex-direction: column;
   width: 65%;
   height: auto;
+}
+.rectangle .description a {
+  font-size: 0.8em;
+  color: blue;
 }
 
 .content.courses {
@@ -167,6 +174,10 @@ main {
 .grid .box p {
   font-size: 0.8em;
 }
+/* For small screens */
+.courses .list {
+  display: none;
+}
 
 .exhibit {
   display: flex;
@@ -192,4 +203,128 @@ footer {
 }
 footer .copyright {
   margin: 16px 24px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+  header .logo {
+    width: 100%;
+    justify-content: space-between;
+  }
+  header .logo span {
+    display: none;
+  }
+  header .nav {
+    display: none;
+  }
+  header .nav-icons {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 24px;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .content {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .column-main {
+    width: 100%;
+    padding: 0px 0px;
+  }
+  .column-main h2 {
+    margin: 32px 16px;
+  }
+  .column-sub {
+    width: 100%;
+  }
+
+  .banner .salescopy {
+    width: 100%;
+    justify-content: center;
+  }
+  .banner .salescopy h1 {
+    margin: 32px 16px;
+  }
+  .banner .salescopy h3 {
+    margin: 0px 16px;
+  }
+  .banner .salescopy .start-here {
+    margin: 24px 16px 32px 16px;
+  }
+
+
+  .articles .column-main {
+    display: none;
+  }
+  .articles .rectangle {
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 16px 16px;
+    border: none;
+  }
+  .articles .rectangle img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 16px 16px;
+  }
+  .rectangle .description {
+    width: 100%;
+    padding-left: 16px;
+  }
+
+
+  .content.courses {
+    background-color: white;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+  .courses h2 {
+    margin: 32px 0px 16px 0px;
+  }
+  .courses .box {
+    display: none;
+  }
+  .courses .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .courses .list .list-rectangle {
+    display: flex;
+    justify-content: flex-start;
+    background-color: lightgrey;
+    margin: 4px 16px;
+  }
+  .courses .list .list-rectangle span {
+    margin: 16px 16px 24px 16px;
+  }
+  .courses .list .list-rectangle.marketing {
+    margin-bottom: 28px;
+  }
+
+  .exhibit .column-main h3, .exhibit .column-main p {
+    display: none;
+  }
+  .exhibit .column-sub {
+    display: none;
+  }
+  .exhibit .content-title {
+    margin: 32px 0px;
+  }
+  .exhibit .column-main video {
+    margin: 16px 0px 24px 0px;
+  }
+
+
+
+  footer .terms {
+    display: none;
+  }
 }
